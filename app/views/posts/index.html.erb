@@ -1,8 +1,8 @@
 <h1>Blog Application</h1>
-
 <% @posts.each do |p| %>
-
-  <h3><%= p.title %></h3>
-  <p><%= p.body %></p>
-
+  <div class="card card-inverse" style="margin-top: 25px; padding: 10px;">
+    <h3><%= p.title %></h3>
+    <p><%= p.body %></p>
+    <%= link_to "Read More", post_path(p), :class => 'btn btn-info' %>
+  </div>
 <% end %>
