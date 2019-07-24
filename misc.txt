@@ -1,0 +1,3 @@
+docker-compose run --rm app rails s -> to start a new rails server
+docker-compose run --rm app rails g controller Posts -> Creates a controller with name Posts
+rake routes -> shows all the routes of the application
